@@ -10,6 +10,11 @@ public class Main {
         company.shiftMoney(1000);
         company.payTaxes();
 
+        // меняем систему налообложения для company
+        company.setTaxSystem(credit);
+        company.shiftMoney(1500);
+        company.payTaxes();
+
         Company company2 = new Company("LG", credit);
         company2.shiftMoney(1000);
         company2.payTaxes();
